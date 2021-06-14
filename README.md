@@ -17,11 +17,3 @@
   env1-dqn-CR-00     :   6.0 +- 0.2   6.1 +- 0.2   6.1 +- 0.2   6.0 +- 0.2
   ```
   * We can easily see and compare the output with corresponding reults in the paper: https://arxiv.org/pdf/1711.11023.pdf
-
-**2. Run the shielded benchmark presented by “florisdenhengst”:**
-  * There are many *.cfg. Run example on one cfg:
-  ```  
-  $ conda activate pydial27
-  (pydial27)$ python pydial.py train config/pydial_benchmarks/shielded/dest/True_20_0_online_0_0.3_0.05_60000_0.0001_50_300_100_0_dec_prof_vp.cfg
-  (pydial27)$ vim _benchmarklogs/True_20_0_online_0_0.3_0.05_60000_0.0001_50_300_100_0_dec_prof_vp-seed0-00.1-30.train.log
-  ```

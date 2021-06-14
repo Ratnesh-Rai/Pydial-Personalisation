@@ -1,0 +1,62 @@
+%haspurpose_inf($V){
+  $V : "its purpose is $V";
+}
+%hasmaximuminterestrate_inf($V){
+  $V : "its maximum interest rate is $V";
+}
+%hasmaximumprincipal_inf($V){
+  $V : "its maximum principal is $V";
+}
+%hasmaximumduration_inf($V){
+  $V : "its maximum duration is $V";
+}
+%hasminimumduration_inf($V){
+  $V : "its minimum duration is $V";
+}
+%haspurpose_rel($V){
+  $V : "with a purpose of $V";
+}
+%hasmaximuminterestrate_rel($V){
+  $V : "with a maximum interest rate of $V";
+}
+%hasmaximumprincipal_rel($V){
+  $V : "with a maximum principal of $V";
+
+}
+%hasmaximumduration_rel($V){
+  $V : "with a maximum duration of $V";
+}
+%hasminimumduration_rel($V){
+  $V : "with a minimum duration of $V";
+}
+ack() : "yes";
+hello() : "Welcome to adaptive loan advisor";
+none() : "Sorry, I'm a bit confused. Please tell me what you are looking for";
+repeat() : "Could you please repeat that?";
+silence() : "Uuuh";
+thankyou() : "Thank you!";
+inform(name=none, ) : "I'm sorry, I couldn't find anything for you. Please tell me what you are looking for";
+inform(name=none, $A=$A_V) : "I am sorry but I could not find anything where %$A_inf($A_V)";
+inform(name=none, $A=$A_V,$B=$B_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V)";
+inform(name=$NAME, ) : "$NAME might be a good loan for you.";
+inform(name=$NAME, $A=$A_V) : "$NAME might be a good loan for you, %$A_inf($A_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V) : "$NAME might be a good loan for you, %$A_inf($A_V) and %$B_inf($B_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V) and %$C_inf($C_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V) and %$D_inf($D_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V) and %$E_inf($E_V)";
+confirm() : "Please tell me more about what you are looking for!";
+confirm($A=$A_V) : "A product %$A_rel($A_V), right?";
+confirm($A=$A_V,$B=$B_V) : "A product %$A_rel($A_V) and %$B_rel($B_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V) : "A product %$A_rel($A_V), %$B_rel($B_V) and %$C_rel($C_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V) and %$D_rel($D_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V) and %$E_rel($E_V), right?";
+request(hasmaximumduration) : "What maximum duration are you looking for?";
+request(hasmaximuminterestrate) : "What maximum interest rate are you looking for?";
+request(hasmaximumprincipal) : "What maximum principal are you looking for?";
+request(hasminimumprincipal) : "What minimum principal are you looking for?";
+request(hasminimumduration) : "What minimum duration are you looking for?";
+request(haspurpose) : "What purpose are you looking for?";
+request($X) : "What $X are you looking for?";

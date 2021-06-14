@@ -1,0 +1,60 @@
+Attractions (79)
+name|pricerange|kind|area|phone|price|addr|postcode|openhours
+79  | 	5      | 12 |  5 |     | 9   | 
+
+
+CamHotels (33)
+id|name|pricerange|kind|area|phone|price|addr|postcode|stars|hasinternet|hasparking|booknumber|bookname|booktime|bookdate
+33| 33 |    3     | 2  |  5 |     |  33 |    |        |  4  |    2      |     2    | 
+
+
+CamRestaurants (110)
+id|name|addr|area|food|phone|pricerange|postcode|signature|description
+	    |  5 | 23 |     |    3 		|  17
+
+CamShops (21)
+id|name|area|phone|postcode|shopkind|addr
+       | 5        |        |   7
+
+CamTransport(5)
+id|name|area|transtype|addr|phone|postcode
+       | 0  |  3
+
+Laptops11(123)
+id|
+name|
+family| 4
+utility| 7
+pricerange| 3
+driverange|  3
+weightrange| 3
+batteryrating| 3
+price| 79
+platform| 5
+processorclass| 10
+processor| 41
+sysmemory| 7
+drive| 7
+graphadaptor| 16
+display| 16
+design| 20
+battery| 16
+weight| 24
+dimension| 26
+warranty| 3
+isforbusinesscomputing | 2
+
+SFHotels(182)
+id|name|phone|near|postcode|addr|area|pricerange|hasinternet|dogsallowed|acceptscreditcards
+
+SFRestaurants(271)
+id|name|phone|near|postcode|addr|area|food|pricerange|goodformeal|allowedforkids|price
+
+TV(94)
+id|name|screensize|price|audio|accessories|power|cabinet|pixels|pricerange|eco|screensizerange|hdmi|usb|series
+
+
+
+
+
+

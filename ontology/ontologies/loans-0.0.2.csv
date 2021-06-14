@@ -1,0 +1,14 @@
+id,name,haspurpose,hasmaximumprincipal,hasminimumprincipal,hasminimumduration,hasmaximumduration,hasmaximumage,hasminimumage,interestrate,requiresaccount,bkrregistration,bkrtest,comeswithinsurance
+http://www.ing.com/semtech/ontologies/loans/ExampleBoatLoan,a boat loan,boat,75000,2500,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleCarLoan,a car loan,car,75000,5000,six months,sixty months,69,18,0.087,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleCaravanLoan,a caravan loan,caravan,75000,2500,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleFinancialFlexibilityLoan,a financial flexibility loan,financial flexibility,75000,2500,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleFurnitureLoan,a furniture loan,furniture,75000,2500,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleHomeImprovementLoan,a home improvement loan,home improvement,75000,5000,six months,ninety six months,69,18,0.087,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleMotorLoan,a motor loan,motor,75000,2500,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/ExampleResidualDebtLoan,a residual debt refinancing loan,financing residual debt,75000,5000,six months,ninety six months,69,18,0.087,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/GenericInstallmentLoan,an installment loan with a different purpose,other purpose,75000,,six months,ninety six months,69,18,0.097,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/INGOverdraft,ING Overdraft,,2000,0,,,,18,0.139,payment account,1,1,  
+http://www.ing.com/semtech/ontologies/loans/HomeOwnersRevolvingCredit,home owners' revolving credit,,75000,10000,,,,18,0.072,,1,1,term life insurance
+http://www.ing.com/semtech/ontologies/loans/INGOverdraftForStudents,ING Overdraft for Students,,1000,0,,,,18,0.072,student account,1,1,  
+http://www.ing.com/semtech/ontologies/loans/RegularRevolvingCredit,revolving credit,,75000,2500,,,,18,0.098,,1,1,term life insurance

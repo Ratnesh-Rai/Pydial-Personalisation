@@ -1,0 +1,40 @@
+[u'request_hasmaximumduration', u'confirm_hasmaximumduration',     u'select_hasmaximumduration'
+
+ u'request_hasmaximuminterestrate', u'confirm_hasmaximuminterestrate', u'select_hasmaximuminterestrate',
+
+u'request_hasmaximumprincipal', u'confirm_hasmaximumprincipal', u'select_hasmaximumprincipal',
+
+u'request_hasminimumduration', u'confirm_hasminimumduration', u'select_hasminimumduration',
+
+u'request_haspurpose', u'confirm_haspurpose', u'select_haspurpose',
+
+'inform',
+'inform_byname',
+'inform_alternatives',
+'bye',
+'repeat',
+'reqmore',
+'restart']
+
+hello()
+hello(more)
+hello(help)
+null()
+repeat()
+bye()
+
+request(field)
+request(field, option=$O)
+request(field, option=$O, option=$O)
+
+reqmore()
+reqmore(field=dontcare)
+
+confirm()
+confirm(fields*=$V) > carthesian product of all field combinations
+confirm(fields1*=$V, fields2=dontcare) > carthesian product of all field combinations where field2=dontcare
+confirm(field=dontcare)
+
+inform(name=none, fields*=$X) > list of all fields (field1, field1+field2, ...)
+
+

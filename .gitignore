@@ -1,0 +1,14 @@
+*.ipynb*
+*.pyc
+tests/*.prm
+tests/*.dct
+documentation/*
+_benchmarklogs/*
+_benchmarkpolicies/*
+_build/*
+_log/*
+_testTraining/*
+_testlogs/*
+_tutorialconfigs/*
+_tutoriallogs/*
+_tutorialpolicies/*

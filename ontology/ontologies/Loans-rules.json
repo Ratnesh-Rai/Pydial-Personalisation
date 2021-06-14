@@ -1,0 +1,128 @@
+{
+    "binary": [
+        "bkrregistration", 
+        "bkrtest"
+    ], 
+    "discourseAct": [
+        "ack", 
+        "hello", 
+        "none", 
+        "repeat", 
+        "silence", 
+        "thankyou"
+    ], 
+    "informable": {
+        "bkrregistration": [
+            "1"
+        ], 
+        "bkrtest": [
+            "1"
+        ], 
+        "comeswithinsurance": [
+            "", 
+            "term life insurance"
+        ], 
+        "hasmaximumage": [
+            "", 
+            "69"
+        ], 
+        "hasmaximumduration": [
+            "", 
+            "ninety six months", 
+            "sixty months"
+        ], 
+        "hasmaximumprincipal": [
+            "1000", 
+            "2000", 
+            "75000"
+        ], 
+        "hasminimumage": [
+            "18"
+        ], 
+        "hasminimumduration": [
+            "", 
+            "six months"
+        ], 
+        "hasminimumprincipal": [
+            "", 
+            "0", 
+            "10000", 
+            "2500", 
+            "5000"
+        ], 
+        "haspurpose": [
+            "", 
+            "boat", 
+            "car", 
+            "caravan", 
+            "financial flexibility", 
+            "financing residual debt", 
+            "furniture", 
+            "home improvement", 
+            "motor", 
+            "other purpose"
+        ], 
+        "interestrate": [
+            "0.072", 
+            "0.087", 
+            "0.097", 
+            "0.098", 
+            "0.139"
+        ], 
+        "name": [
+            "a boat loan", 
+            "a car loan", 
+            "a caravan loan", 
+            "a financial flexibility loan", 
+            "a furniture loan", 
+            "a home improvement loan", 
+            "a motor loan", 
+            "a residual debt refinancing loan", 
+            "an installment loan with a different purpose", 
+            "home owners' revolving credit", 
+            "ing overdraft", 
+            "ing overdraft for students", 
+            "revolving credit"
+        ], 
+        "requiresaccount": [
+            "", 
+            "payment account", 
+            "student account"
+        ]
+    }, 
+    "method": [
+        "none", 
+        "byconstraints", 
+        "byname", 
+        "finished", 
+        "byalternatives", 
+        "restart"
+    ], 
+    "requestable": [
+        "hasminimumage", 
+        "haspurpose", 
+        "name", 
+        "hasmaximumduration", 
+        "bkrtest", 
+        "comeswithinsurance", 
+        "bkrregistration", 
+        "hasmaximumprincipal", 
+        "interestrate", 
+        "requiresaccount", 
+        "hasminimumduration", 
+        "hasminimumprincipal", 
+        "hasmaximumage"
+    ], 
+    "system_requestable": [
+        "hasminimumage", 
+        "haspurpose", 
+        "requiresaccount", 
+        "comeswithinsurance",
+        "name",
+        "hasmaximumduration", 
+        "hasminimumduration", 
+        "hasminimumprincipal", 
+        "hasmaximumprincipal"
+    ], 
+    "type": "Loans"
+}

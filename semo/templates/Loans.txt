@@ -1,0 +1,149 @@
+%haspurpose_inf($V){
+  $V : "its purpose is $V";
+}
+%name_inf($V){
+  $V : "its name is $V";
+}
+%hasmaximumduration_inf($V){
+  $V : "its maximum duration is $V";
+}
+%hasmaximumage_inf($V){
+  $V : "its maximum age is $V";
+}
+%hasminimumage_inf($V){
+  $V : "it has a minimum age of $V";
+}
+%requiresaccount_inf($V){
+  $V : "it requires a $V";
+}
+%hasminimumduration_inf($V){
+  $V : "its minimum duration is $V";
+
+}
+%hasminimumprincipal_inf($V){
+  $V : "its minimum principal is $V";
+
+}
+%comeswithinsurance_inf($V){
+  $V : "it comes with $V";
+}
+%allowsforrepaymentwithdrawal_inf($V){
+  1 : "it allows for repayments to be withdrawn later";
+  0 : "it doesn't allow for repayments to be withdrawn later";
+}
+%haspurpose_rel($V){
+  $V : "with a purpose of $V";
+}
+%comeswithinsurance_rel($V){
+  $V : "with a $V";
+}
+%other_inf($V){
+  $V : "alternatives";
+}
+%bkrtest_inf($V){
+  1 : "it comes with a bkr test";
+  0 : "it does not come with a bkr test";
+}
+%bkrregistration_inf($V){
+  1 : "it comes with a bkr registration";
+  0 : "it does not come with a bkr registration";
+}
+%hasmaximumprincipal_inf($V){
+  $V : "it has a loan amount of up to $V euro";
+}
+%interestrate_inf($V){
+  $V : "it currently has an interest rate of $V";
+}
+#%name_rel($V){
+#
+#}
+%hasmaximumduration_rel($V){
+  $V : "with a maximum duration of $V";
+
+}
+%requiresaccount_rel($V){
+  $V : "which requires a $V";
+}
+%hasmaximumprincipal_rel($V){
+  $V : "with a maximum principal of $V";
+}
+%hasminimumduration_rel($V){
+  $V : "with a minimum duration of $V";
+}
+%hasminimumprincipal_rel($V){
+  $V : "with a minimum principal of $V euro";
+}
+%hasmaximumage_rel($V){
+  $V : "with a maximum age of $V years";
+}
+%hasminimumage_rel($V){
+  $V : "with a minimum age limit of $V";
+}
+%allowsforrepaymentwithdrawal_rel($V){
+  1 : "which allows for repayments to be withdrawn later";
+  0 : "which doesn't allow for repayments to be withdrawn later";
+
+}
+ack() : "yes";
+hello() : "Welcome to adaptive loan advisor";
+none() : "Sorry, I'm a bit confused. Please tell me what you are looking for";
+repeat() : "Could you please repeat that?";
+silence() : "Uuuh";
+thankyou() : "Thank you!";
+
+inform(name=none, ) : "I'm sorry, I couldn't find anything for you. Please tell me what you are looking for";
+inform(name=none, $A=$A_V) : "I am sorry but I could not find anything where %$A_inf($A_V)";
+inform(name=none, $A=$A_V,$B=$B_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V), %$L_inf($L_V)";
+inform(name=none, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V,$M=$M_V) : "I am sorry but I could not find anything where %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V), %$L_inf($L_V), %$M_inf($M_V)";
+
+inform(name=$NAME, ) : "$NAME might be a good loan for you.";
+inform(name=$NAME, $A=$A_V) : "$NAME might be a good loan for you, %$A_inf($A_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V) : "$NAME might be a good loan for you, %$A_inf($A_V) and %$B_inf($B_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V) and %$C_inf($C_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V) and %$D_inf($D_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V) and %$E_inf($E_V)";
+
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V), %$L_inf($L_V)";
+inform(name=$NAME, $A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V,$M=$M_V) : "$NAME might be a good loan for you, %$A_inf($A_V), %$B_inf($B_V), %$C_inf($C_V), %$D_inf($D_V), %$E_inf($E_V), %$F_inf($F_V), %$G_inf($G_V), %$H_inf($H_V), %$I_inf($I_V), %$J_inf($J_V), %$K_inf($K_V), %$L_inf($L_V), %$M_inf($M_V)";
+
+confirm() : "Please tell me more about what you are looking for!";
+confirm($A=$A_V) : "A product %$A_rel($A_V), right?";
+confirm($A=$A_V,$B=$B_V) : "A product %$A_rel($A_V) and %$B_rel($B_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V) : "A product %$A_rel($A_V), %$B_rel($B_V) and %$C_rel($C_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V) and %$D_rel($D_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V) and %$E_rel($E_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V) : "A product%$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V) : "A product%$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V) : "A product%$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), %$I_rel($I_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), %$I_rel($I_V), %$J_rel($J_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), %$I_rel($I_V), %$J_rel($J_V), %$K_rel($K_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), %$I_rel($I_V), %$J_rel($J_V), %$K_rel($K_V), %$L_rel($L_V), right?";
+confirm($A=$A_V,$B=$B_V,$C=$C_V,$D=$D_V,$E=$E_V,$F=$F_V,$G=$G_V,$H=$H_V,$I=$I_V,$J=$J_V,$K=$K_V,$L=$L_V,$M=$M_V) : "A product %$A_rel($A_V), %$B_rel($B_V), %$C_rel($C_V), %$D_rel($D_V), %$E_rel($E_V), %$F_rel($F_V), %$G_rel($G_V), %$H_rel($H_V), %$I_rel($I_V), %$J_rel($J_V), %$K_rel($K_V), %$L_rel($L_V), %$M_rel($M_V), right?";
+request(allowsforrepaymentwithdrawal) : "Would you like to withdraw repayments later on?";
+request(hasmaximumduration) : "What maximum duration are you looking for?";
+request(hasmaximumprincipal) : "What maximum principal are you looking for?";
+request(hasminimumduration) : "What minimum duration are you looking for?";
+request(hasminimumprincipal) : "What minimum principal are you looking for?";
+request(comeswithinsurance) : "What kind of insurance would you like?";
+request(hasminimumage) : "What minimum age are you looking for?";
+request(hasmaximumage) : "What maximum age are you looking for?";
+request(haspurpose) : "What purpose are you looking for?";
+request(requiresaccount) : "What kind of account do you have?";
+request($X) : "What $X are you looking for?";

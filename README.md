@@ -46,7 +46,7 @@ PyDial is distributed under Apache 2.0 Licensed. See LICENSE
 ## Run some examples:
 **1. Run benchmark using pydial :** https://bitbucket.org/dialoguesystems/pydial/src/master/
   * Following URL https://pydial.cs.hhu.de/benchmarks/ , run the followind commands to reproduce the benchmark output for "env1-dqn-CR.cfg"
-  ``
+  ```
   (pydial27)$ python pydial.py train config/pydial_benchmarks/env1-dqn-CR.cfg
   (pydial27)$ python pydial.py plot --noplot _benchmarklogs/env1-dqn-CR-seed7051991-00.1-4.train.log
   env1-CamRestaurants: Performance vs Num Dialogs
@@ -56,20 +56,15 @@ PyDial is distributed under Apache 2.0 Licensed. See LICENSE
   env1-dqn-CR-00     :  94.6 +- 2.0  90.6 +- 2.6  90.6 +- 2.6  98.4 +- 1.1
   Turns                        1000         2000         3000         4000
   env1-dqn-CR-00     :   6.0 +- 0.2   6.1 +- 0.2   6.1 +- 0.2   6.0 +- 0.2
-  ``
+  ```
   * We can easily see and compare the output with corresponding reults in the paper: https://arxiv.org/pdf/1711.11023.pdf
   
   **2. Similarly to run with other hyperparameters and algorithms modify configuration files present at config/pydial_benchmarks/
   * To run training, use following command:
-  ``
-  python pydial.py train config/pydial_benchmarks/<configuration file name>.
-  ``
+   >python pydial.py train config/pydial_benchmarks/<configuration file name>.
+  
   * To run test, type:
-  ``
-  testPydial
-  ``
+  >testPydial
   It will run all the test present under tests directory
   * To plot the resultant 
-  ``
-  pydial.py plot --noplot _benchmarklogs/<log name>
-  ``
+  >pydial.py plot --noplot _benchmarklogs/<log name>

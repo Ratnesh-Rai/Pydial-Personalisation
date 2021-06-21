@@ -44,7 +44,7 @@ The PyDial Team
 August 2018
 PyDial is distributed under Apache 2.0 Licensed. See LICENSE
 ## Run some examples:
-**1. Run benchmark using pydial :** https://bitbucket.org/dialoguesystems/pydial/src/master/
+**1. Run benchmark using pydial :
   * Following URL https://pydial.cs.hhu.de/benchmarks/ , run the followind commands to reproduce the benchmark output for "env1-dqn-np-CR.cfg",
   * You can select any config file just replace the config filename or path
   ```

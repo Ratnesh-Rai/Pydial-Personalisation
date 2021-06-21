@@ -3,9 +3,10 @@
 ## Steps to setup Pydial
 If you are reading this you have probably already downloaded the PyDial repo but if
 you havent, do it now:
-
-> git clone https://github.com/Ratnesh-Rai/Pydial-Personalisation.git
-> cd Pydial-Personalisation
+ ```
+ git clone https://github.com/Ratnesh-Rai/Pydial-Personalisation.git
+ cd Pydial-Personalisation
+ ```
 
 PyDial uses Python 2.7 and has not been tested with other versions. Ensure 
 that you use the requirements.txt file to install the appropriate dependencies
